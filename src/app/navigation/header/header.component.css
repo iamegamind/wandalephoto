@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "title menus options";
+}
+
+.menus {
+  grid-area: menus;
+}
+
+.options {
+  grid-area: options;
+}
+
+.title {
+  grid-area: title;
+}
+
+
+mat-toolbar {
+  height: 40px;
+  border-bottom: 1px solid #929292;
+}
