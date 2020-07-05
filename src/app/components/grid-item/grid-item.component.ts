@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-grid-item',
@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GridItemComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  imageSrc: string;
+
+  @Input()
+  imageCaption: string;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
