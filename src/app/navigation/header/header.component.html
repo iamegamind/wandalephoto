@@ -1,13 +1,43 @@
-<mat-toolbar>
-  <div class="header">
-    <div class="title" fxLayout="row" fxLayoutAlign="start center">
-      Wanda Lephoto
+<div>
+  <mat-toolbar color="primary">
+    <div class="header">
+      <div class="title" fxLayout="row" fxLayoutAlign="start center"
+           routerLink="/">
+        <mat-icon class="icon" svgIcon="wandal_icon">
+        </mat-icon>
+        <div class="text">
+          WANDA LEPHOTO
+        </div>
+      </div>
+
+      <div class="menus" fxLayout="row"
+           fxLayoutAlign="center center"
+           fxHide.lt-md="true">
+        <a mat-button [matMenuTriggerFor]="collectionsMenu">
+          COLLECTIONS
+        </a>
+        <a mat-button routerLink="/about">
+          ABOUT
+        </a>
+      </div>
+
+      <div class="actions" fxLayout="row" fxLayoutAlign="end center">
+        <div fxHide.lt-md="true">
+          OPTIONS
+        </div>
+        <div fxHide="true" fxShow.lt-md="true">
+          <a href="#" (click)="toggleSidenav()"
+             fxLayout="row" fxLayoutAlign="start center" style="text-decoration: none">
+            <mat-icon aria-hidden="false" aria-label="Menu">menu</mat-icon>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="menus" fxLayout="row" fxLayoutAlign="center center">
-      menus
-    </div>
-    <div class="options" fxLayout="row" fxLayoutAlign="end center">
-      options
-    </div>
-  </div>
-</mat-toolbar>
+  </mat-toolbar>
+
+</div>
+
+<mat-menu #collectionsMenu="matMenu">
+  <button mat-menu-item (click)="openSidenav(false)">AW '17</button>
+  <button mat-menu-item (click)="openSidenav(false)">Help</button>
+</mat-menu>

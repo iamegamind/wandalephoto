@@ -1,0 +1,12 @@
+<mat-sidenav [opened]="isSideNavOpened"
+             fixedInViewport="true"
+             fixedTopGap="40">
+  <mat-list>
+    <mat-list-item>
+      <a mat-list-item (click)="openSidenav(false)">COLLECTIONS1</a>
+    </mat-list-item>
+    <mat-list-item>
+      <a mat-list-item routerLink="/about" (click)="openSidenav(false)">ABOUT</a>
+    </mat-list-item>
+  </mat-list>
+</mat-sidenav>

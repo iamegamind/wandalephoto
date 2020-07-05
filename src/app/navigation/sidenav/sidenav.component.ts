@@ -1,16 +1,16 @@
 import {Component, OnInit} from '@angular/core';
 import {Store} from '@ngrx/store';
-import {AppState} from './reducers';
-import {selectIsSidenavOpen} from './store/navigation/navigation.selectors';
-import {closeSidenav, openSidenav, toggleSidenav} from './store/navigation/navigation.actions';
+import {AppState} from '../../reducers';
+import {selectIsSidenavOpen} from '../../store/navigation/navigation.selectors';
+import {closeSidenav, openSidenav, toggleSidenav} from '../../store/navigation/navigation.actions';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-sidenav',
+  templateUrl: './sidenav.component.html',
+  styleUrls: ['./sidenav.component.css']
 })
-export class AppComponent implements OnInit {
-  title = 'wandalephoto';
+export class SidenavComponent implements OnInit {
+
   isSideNavOpened = false;
 
   constructor(private store: Store<AppState>) {

@@ -1,4 +1,28 @@
-<app-header></app-header>
-<div class="content">
-  stuff will be here
+<div class="container">
+  <app-header></app-header>
+  <mat-sidenav-container>
+    <mat-sidenav [opened]="isSideNavOpened"
+                 fixedInViewport="true"
+                 fixedTopGap="40">
+      <mat-list>
+        <mat-list-item>
+          <a mat-list-item (click)="openSidenav(false)">COLLECTIONS1</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a mat-list-item routerLink="/about" (click)="openSidenav(false)">ABOUT</a>
+        </mat-list-item>
+      </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
 </div>
+
+<mat-menu #collectionsMenu="matMenu">
+  <button mat-menu-item (click)="openSidenav(false)">AW '17</button>
+  <button mat-menu-item (click)="openSidenav(false)">Help</button>
+</mat-menu>

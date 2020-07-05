@@ -11,16 +11,29 @@
   grid-area: menus;
 }
 
-.options {
+.actions {
   grid-area: options;
 }
 
 .title {
   grid-area: title;
+  cursor: pointer;
+  text-decoration: none;
+
+  .icon {
+
+  }
+
+  .text {
+    margin-left: 5px;
+  }
 }
 
 
 mat-toolbar {
   height: 40px;
   border-bottom: 1px solid #929292;
+
+  position: fixed;
+  z-index: 1000;
 }
