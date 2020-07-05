@@ -16,7 +16,7 @@ export class HeaderComponent {
               private domSanitizer: DomSanitizer) {
     this.matIconRegistry.addSvgIcon(
       `wandal_icon`,
-      this.domSanitizer.bypassSecurityTrustResourceUrl('../../../assets/img/wandal-logo.svg'));
+      this.domSanitizer.bypassSecurityTrustResourceUrl('./assets/img/wandal-logo.svg'));
   }
 
   openSidenav(open?: boolean) {
