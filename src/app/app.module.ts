@@ -18,6 +18,8 @@ import { GridItemComponent } from './components/grid-item/grid-item.component';
 import {HttpClientModule} from '@angular/common/http';
 import { SidenavComponent } from './navigation/sidenav/sidenav.component';
 import { ImageSliderComponent } from './components/image-slider/image-slider.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { ImageSliderComponent } from './components/image-slider/image-slider.com
     ResponsiveGridComponent,
     GridItemComponent,
     SidenavComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { ImageSliderComponent } from './components/image-slider/image-slider.com
       }
     }),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

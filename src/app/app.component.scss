@@ -14,3 +14,9 @@ app-header {
   left: 0;
   right: 0;
 }
+
+mat-list-item {
+  .mat-list-item-content {
+    padding: 0;
+  }
+}

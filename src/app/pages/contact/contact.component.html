@@ -1,0 +1,28 @@
+<div class="contact-container">
+
+  <div class="form-header mat-headline">
+    Contact Us
+  </div>
+  <form [formGroup]="contactForm">
+
+    <mat-form-field appearance="fill">
+      <mat-label>Full Name</mat-label>
+      <input matInput placeholder="Full Name" formControlName="fullName">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Email Address</mat-label>
+      <input matInput placeholder=" Email Address" type="email" formControlName="email">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Phone Number</mat-label>
+      <input matInput type="tel" placeholder="Phone Number" formControlName="phoneNumber">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Leave us a message</mat-label>
+      <textarea matInput placeholder="Type us something lovely..." formControlName="message"></textarea>
+    </mat-form-field>
+  </form>
+</div>

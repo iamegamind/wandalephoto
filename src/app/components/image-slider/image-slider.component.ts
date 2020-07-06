@@ -5,7 +5,7 @@ import {interval} from 'rxjs';
 @Component({
   selector: 'app-image-slider',
   templateUrl: './image-slider.component.html',
-  styleUrls: ['./image-slider.component.css'],
+  styleUrls: ['./image-slider.component.scss'],
   animations: [
     trigger('flyInOut', [
       state('in', style({transform: 'translateX(0)'})),
@@ -30,11 +30,11 @@ export class ImageSliderComponent implements OnInit {
   loading = true;
 
   imagesUrl = [
-    '../../../assets/img/aw17/aw17-1.jpg',
-    '../../../assets/img/aw17/aw17-5.jpg',
-    '../../../assets/img/aw17/aw17-3.jpg',
-    '../../../assets/img/aw17/aw17-4.jpg',
-    '../../../assets/img/aw17/aw17-27.jpg',
+    './assets/img/aw17/aw17-1.jpg',
+    './assets/img/aw17/aw17-5.jpg',
+    './assets/img/aw17/aw17-3.jpg',
+    './assets/img/aw17/aw17-4.jpg',
+    './assets/img/aw17/aw17-27.jpg',
   ];
 
   ngOnInit() {
