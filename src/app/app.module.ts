@@ -17,6 +17,7 @@ import { ResponsiveGridComponent } from './navigation/responsive-grid/responsive
 import { GridItemComponent } from './components/grid-item/grid-item.component';
 import {HttpClientModule} from '@angular/common/http';
 import { SidenavComponent } from './navigation/sidenav/sidenav.component';
+import { ImageSliderComponent } from './components/image-slider/image-slider.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SidenavComponent } from './navigation/sidenav/sidenav.component';
     HomeComponent,
     ResponsiveGridComponent,
     GridItemComponent,
-    SidenavComponent
+    SidenavComponent,
+    ImageSliderComponent
   ],
   imports: [
     BrowserModule,

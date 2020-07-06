@@ -1,0 +1,7 @@
+<ng-container *ngFor="let i of [0,1,2,3,4]">
+  <div *ngIf="i==index && !loading" [@flyInOut] [ngClass]="'background div'+i">
+  </div>
+</ng-container>
+<div *ngIf="loading" class="background div0"></div>
+
+<!--Hello word-->

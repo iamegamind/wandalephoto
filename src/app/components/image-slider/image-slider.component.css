@@ -1,0 +1,47 @@
+:host {
+  display: block;
+}
+
+section {
+  margin-top: 100px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /*width: 100%;*/
+  height: 100%;
+  /*z-index: -1;*/
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+.div0 {
+  background-image: url("../../../assets/img/aw17/aw17-4.jpg");
+  background-position: center top;
+}
+
+.div1 {
+  background-image: url("../../../assets/img/aw17/aw17-1.jpg");
+  background-position: center top;
+}
+
+.div2 {
+  background-image: url("../../../assets/img/aw17/aw17-5.jpg");
+  background-position: center top;
+}
+
+.div3 {
+  background-image: url("../../../assets/img/aw17/aw17-3.jpg");
+  background-position: center top;
+
+}
+
+.div4 {
+  background-image: url("../../../assets/img/aw17/aw17-27.jpg");
+  background-position: center top;
+}
+
