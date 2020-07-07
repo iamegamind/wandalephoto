@@ -3,7 +3,7 @@
     <div class="header">
       <div class="title" fxLayout="row" fxLayoutAlign="start center"
            routerLink="/">
-        <img src="./assets/img/typeface.png" style=" max-height: 100%">
+        <img src="./assets/img/typeface.png" style=" max-height: 100%; max-width: 100%">
       </div>
 
       <div class="menus" fxLayout="row"
@@ -17,14 +17,18 @@
         </a>
       </div>
 
-      <div class="actions" fxLayout="row" fxLayoutAlign="end center">
-        <div fxHide.lt-md="true">
+      <div class="options" fxLayout="row" fxLayoutAlign="end center">
+        <div fxHide.lt-md="true" class="options-text">
           <a routerLink="/contact">CONTACT</a>
         </div>
-        <div fxHide="true" fxShow.lt-md="true">
+        <div class="menu-icon" fxHide="true" fxShow.lt-md="true">
           <a href="#" (click)="toggleSidenav()"
              fxLayout="row" fxLayoutAlign="start center" style="text-decoration: none">
-            <mat-icon aria-hidden="false" aria-label="Menu">menu</mat-icon>
+            <mat-icon aria-hidden="false"
+                      aria-label="Menu"
+                      color="accent">
+              menu
+            </mat-icon>
           </a>
         </div>
       </div>

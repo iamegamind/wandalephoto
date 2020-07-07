@@ -15,8 +15,17 @@
   grid-area: menus;
 }
 
-.actions {
+.options {
   grid-area: options;
+
+  .options-text {
+    a {
+      color: black;
+    }
+  }
+
+  .menu-icon {
+  }
 }
 
 .title {
