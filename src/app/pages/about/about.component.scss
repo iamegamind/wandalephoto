@@ -1,0 +1,28 @@
+.about-container {
+  display: grid;
+
+  width: 100%;
+
+  .blocks {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 1rem;
+
+    .block {
+      padding: 0.5rem 0.5rem;
+    }
+  }
+
+  /* Screen larger than 760px? 2 column */
+  @media (min-width: 760px) {
+    .blocks {
+      grid-template-columns: repeat(2, 1fr);
+
+      .block {
+        height: 100%;
+      }
+    }
+  }
+
+}
