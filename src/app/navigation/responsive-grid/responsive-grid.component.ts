@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-responsive-grid',
@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResponsiveGridComponent implements OnInit {
 
-  constructor() { }
+  gridItems = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}];
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

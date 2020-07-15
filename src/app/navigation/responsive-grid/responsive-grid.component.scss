@@ -1,11 +1,37 @@
 .container {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(322px, 1fr));
-  grid-row-gap: 1em;
-  grid-column-gap: 1em;
 
-  .grid-item {
+  .grid-items {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 1rem;
+
+    .grid-item {
+      padding: 0.5rem;
+    }
   }
+
+  /* Screen larger than 600px? 2 column */
+  @media (min-width: 600px) {
+    .grid-items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+    .grid-items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* Screen larger than 1000px? 3 columns */
+  @media (min-width: 1200px) {
+    .grid-items {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
 
 }

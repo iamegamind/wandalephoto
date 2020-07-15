@@ -20,6 +20,7 @@ import { SidenavComponent } from './navigation/sidenav/sidenav.component';
 import { ImageSliderComponent } from './components/image-slider/image-slider.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { CollectionComponent } from './pages/collection/collection.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     GridItemComponent,
     SidenavComponent,
     ImageSliderComponent,
-    ContactComponent
+    ContactComponent,
+    CollectionComponent
   ],
   imports: [
     BrowserModule,
