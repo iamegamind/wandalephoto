@@ -29,14 +29,15 @@
   .menus {
     grid-area: menus;
 
-    .sub-menu-item {
+    .header-menu-item {
       display: flex;
       flex-direction: row;
       align-items: center;
 
-      font-family: "Helvetica Extended", sans-serif;
-      font-weight: lighter;
-      letter-spacing: -1px;
+      font-family: "Helvetica Neue", sans-serif;
+      font-weight: 200;
+      letter-spacing: -0.3px;
+
 
       span {
         margin-left: 10px;
@@ -51,9 +52,9 @@
     .options-text {
       a {
         color: black;
-        font-family: "Helvetica Extended", sans-serif;
-        font-weight: lighter;
-        letter-spacing: -1px;
+        font-family: "Helvetica Neue", sans-serif;
+        letter-spacing: -0.3px;
+        font-weight: 200;
       }
     }
 
@@ -71,11 +72,6 @@ mat-toolbar {
   z-index: 1000;
 }
 
-
-.specialProjects-menu button.mat-menu-item {
-  letter-spacing: 2px;
-}
-
-.collections-menu button.mat-menu-item {
-  letter-spacing: 2px;
+.sub-menu-item {
+  letter-spacing: 3px;
 }

@@ -12,32 +12,32 @@
       <div class="menus" fxLayout="row"
            fxLayoutAlign="center center"
            fxHide.lt-md="true">
-        <a mat-button class="sub-menu-item">
+        <a mat-button class="header-menu-item">
           <div fxLayout="row" fxLayoutAlign=" center">
             <div>MAN</div>
             <span>v</span>
           </div>
         </a>
-        <a mat-button class="sub-menu-item">
+        <a mat-button class="header-menu-item">
           <div fxLayout="row" fxLayoutAlign=" center">
             <div>WOMAN</div>
             <span>v</span>
           </div>
         </a>
-        <a mat-button class="sub-menu-item" style="color: #CC2812"
+        <a mat-button class="header-menu-item" style="color: #CC2812"
            [matMenuTriggerFor]="saleMenu">
           <div fxLayout="row" fxLayoutAlign=" center">
             <div>SALE</div>
             <span>v</span>
           </div>
         </a>
-        <a mat-button class="sub-menu-item" [matMenuTriggerFor]="collectionsMenu">
+        <a mat-button class="header-menu-item" [matMenuTriggerFor]="collectionsMenu">
           <div fxLayout="row" fxLayoutAlign=" center">
             <div>COLLECTIONS</div>
             <span>v</span>
           </div>
         </a>
-        <a mat-button class="sub-menu-item" [matMenuTriggerFor]="specialProjectsMenu"
+        <a mat-button class="header-menu-item" [matMenuTriggerFor]="specialProjectsMenu"
            style="background-color: #CC2812; color: white">
           <div fxLayout="row" fxLayoutAlign=" center">
             <div>SPECIAL PROJECTS</div>
@@ -82,28 +82,55 @@
 </div>
 
 <mat-menu class="collections-menu" #collectionsMenu="matMenu">
-  <button mat-menu-item routerLink="/aw17" (click)="openSidenav(false)">AW20</button>
-  <button mat-menu-item (click)="openSidenav(false)">SS20</button>
+  <button mat-menu-item routerLink="/aw17" class="sub-menu-item" (click)="openSidenav(false)">AW20</button>
+  <button mat-menu-item class="sub-menu-item" (click)="openSidenav(false)">SS20</button>
 </mat-menu>
 
 <mat-menu class="sale-menu" #saleMenu="matMenu">
-  <button mat-menu-item (click)="openSidenav(false)"
+  <button mat-menu-item class="sub-menu-item" (click)="openSidenav(false)"
           style="color: #CC2812">SALE
   </button>
-  <button mat-menu-item (click)="openSidenav(false)">SEE ALL</button>
-  <button mat-menu-item (click)="openSidenav(false)">SHIRTS</button>
-  <button mat-menu-item (click)="openSidenav(false)">TOPS</button>
-  <button mat-menu-item (click)="openSidenav(false)">PANTS</button>
-  <button mat-menu-item (click)="openSidenav(false)">OUTERWEAR</button>
-  <button mat-menu-item (click)="openSidenav(false)">BLAZERS & JACKETS</button>
-  <button mat-menu-item (click)="openSidenav(false)">KNITWEAR</button>
+  <button mat-menu-item class="sub-menu-item" (click)="openSidenav(false)">
+    SEE ALL
+  </button>
+  <button mat-menu-item class="sub-menu-item" (click)="openSidenav(false)">
+    SHIRTS
+  </button>
+  <button mat-menu-item class="sub-menu-item" (click)="openSidenav(false)">
+    TOPS
+  </button>
+  <button mat-menu-item class="sub-menu-item" (click)="openSidenav(false)">
+    PANTS
+  </button>
+  <button mat-menu-item class="sub-menu-item" (click)="openSidenav(false)">
+    OUTERWEAR
+  </button>
+  <button mat-menu-item class="sub-menu-item" (click)="openSidenav(false)">
+    BLAZERS & JACKETS
+  </button>
+  <button mat-menu-item class="sub-menu-item" (click)="openSidenav(false)">
+    KNITWEAR
+  </button>
 </mat-menu>
 
 <mat-menu class="specialProjects-menu" #specialProjectsMenu="matMenu">
-  <button mat-menu-item (click)="openSidenav(false)">WL FOUND</button>
-  <button mat-menu-item (click)="openSidenav(false)">KAIZER CHIEFS</button>
-  <button mat-menu-item (click)="openSidenav(false)">THE SARTISTS</button>
-  <button mat-menu-item (click)="openSidenav(false)">MoMA</button>
-  <button mat-menu-item (click)="openSidenav(false)">TROPENMUSEUM</button>
-  <button mat-menu-item (click)="openSidenav(false)">FOAM GALLERY</button>
+  <button mat-menu-item class="sub-menu-item" (click)="openSidenav(false)"
+          style="color: #CC2812">
+    WL FOUND
+  </button>
+  <button mat-menu-item class="sub-menu-item" (click)="openSidenav(false)">
+    KAIZER CHIEFS
+  </button>
+  <button mat-menu-item class="sub-menu-item" (click)="openSidenav(false)">
+    THE SARTISTS
+  </button>
+  <button mat-menu-item (click)="openSidenav(false)">
+    MoMA
+  </button>
+  <button mat-menu-item class="sub-menu-item" (click)="openSidenav(false)">
+    TROPENMUSEUM
+  </button>
+  <button mat-menu-item class="sub-menu-item" (click)="openSidenav(false)">
+    FOAM GALLERY
+  </button>
 </mat-menu>
