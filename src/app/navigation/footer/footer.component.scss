@@ -1,0 +1,29 @@
+mat-toolbar {
+  height: 50px;
+  border: 5px solid black;
+
+  position: fixed;
+  z-index: 1000;
+
+  .footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "blank blank1 footer-content";
+
+
+    .blank {
+      grid-area: blank;
+    }
+
+    .blank1 {
+      grid-area: blank1;
+    }
+
+    .footer-content {
+      grid-area: footer-content;
+    }
+  }
+}

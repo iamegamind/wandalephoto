@@ -1,5 +1,5 @@
 .container {
-  min-height: 100vh;
+  //min-height: 100vh;
 }
 
 .content {
@@ -11,6 +11,13 @@
 app-header {
   //position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+}
+
+app-footer {
+  //position: fixed;
+  bottom: 0;
   left: 0;
   right: 0;
 }

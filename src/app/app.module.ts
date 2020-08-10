@@ -21,6 +21,7 @@ import { ImageSliderComponent } from './components/image-slider/image-slider.com
 import { ContactComponent } from './pages/contact/contact.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { CollectionComponent } from './pages/collection/collection.component';
+import { FooterComponent } from './navigation/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CollectionComponent } from './pages/collection/collection.component';
     SidenavComponent,
     ImageSliderComponent,
     ContactComponent,
-    CollectionComponent
+    CollectionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

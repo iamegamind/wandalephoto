@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container" fxLayout="column" fxFlexFill>
   <app-header></app-header>
-  <mat-sidenav-container>
+  <mat-sidenav-container fxFlex>
     <mat-sidenav [opened]="isSideNavOpened"
                  fixedInViewport="true"
                  fixedTopGap="40">
@@ -11,22 +11,22 @@
           </a>
         </mat-list-item>
         <mat-list-item>
-          <a mat-list-item routerLink="/aw17" (click)="openSidenav(false)">
+          <a mat-list-item (click)="openSidenav(false)">
             WOMAN
           </a>
         </mat-list-item>
         <mat-list-item>
-          <a mat-list-item routerLink="/about" (click)="openSidenav(false)">
+          <a mat-list-item (click)="openSidenav(false)" style="color: #CC2812">
             SALE
           </a>
         </mat-list-item>
         <mat-list-item>
-          <a mat-list-item routerLink="/contact" (click)="openSidenav(false)">
+          <a mat-list-item (click)="openSidenav(false)">
             COLLECTION
           </a>
         </mat-list-item>
-        <mat-list-item>
-          <a mat-list-item routerLink="/contact" (click)="openSidenav(false)">
+        <mat-list-item style="background-color: #CC2812">
+          <a mat-list-item (click)="openSidenav(false)" style="color: white">
             SPECIAL PROJECTS
           </a>
         </mat-list-item>
@@ -38,7 +38,7 @@
       </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
-
+  <app-footer></app-footer>
 </div>
 
 <mat-menu #collectionsMenu="matMenu">
