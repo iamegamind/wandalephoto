@@ -28,6 +28,16 @@
 
   .menus {
     grid-area: menus;
+
+    .sub-menu-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      font-family: "Helvetica Extended", sans-serif;
+      font-weight: lighter;
+      letter-spacing: -1px;
+    }
   }
 
   .options {
@@ -36,6 +46,9 @@
     .options-text {
       a {
         color: black;
+        font-family: "Helvetica Extended", sans-serif;
+        font-weight: lighter;
+        letter-spacing: -1px;
       }
     }
 
@@ -46,9 +59,18 @@
 
 
 mat-toolbar {
-  height: 40px;
-  border-bottom: 1px solid #929292;
+  height: 50px;
+  border-bottom: 5px solid black;
 
   position: fixed;
   z-index: 1000;
+}
+
+
+.specialProjects-menu button.mat-menu-item {
+  letter-spacing: 2px;
+}
+
+.collections-menu button.mat-menu-item {
+  letter-spacing: 2px;
 }

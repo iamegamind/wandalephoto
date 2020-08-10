@@ -12,21 +12,46 @@
       <div class="menus" fxLayout="row"
            fxLayoutAlign="center center"
            fxHide.lt-md="true">
-        <a mat-button [matMenuTriggerFor]="collectionsMenu">
-          COLLECTIONS
+        <a mat-button class="sub-menu-item">
+          MAN <span>v</span>
         </a>
-        <a mat-button routerLink="/about">
-          ABOUT
+        <a mat-button class="sub-menu-item">
+          WOMAN <span>v</span>
         </a>
+        <a mat-button class="sub-menu-item">
+          SALE <span>v</span>
+        </a>
+        <a mat-button class="sub-menu-item" [matMenuTriggerFor]="collectionsMenu">
+          COLLECTIONS <span>v</span>
+        </a>
+        <a mat-button class="sub-menu-item" [matMenuTriggerFor]="specialProjectsMenu">
+          SPECIAL PROJECTS <span>v</span>
+        </a>
+
+
       </div>
 
       <div class="options" fxLayout="row" fxLayoutAlign="end center">
         <div fxHide.lt-md="true" class="options-text">
-          <a routerLink="/contact">CONTACT</a>
+          <a mat-button>SEARCH</a>
         </div>
+        <div fxHide.lt-md="true" class="options-text">
+          <a mat-button>LOGIN</a>
+        </div>
+        <div fxHide.lt-md="true" class="options-text">
+          <a mat-button>
+            <mat-icon aria-hidden="false"
+                      aria-label="Menu"
+                      color="accent">
+              shopping_cart
+            </mat-icon>
+          </a>
+        </div>
+
         <div class="menu-icon" fxHide="true" fxShow.lt-md="true">
           <a href="#" (click)="toggleSidenav()"
-             fxLayout="row" fxLayoutAlign="start center" style="text-decoration: none">
+             fxLayout="row" fxLayoutAlign="start center"
+             style="text-decoration: none">
             <mat-icon aria-hidden="false"
                       aria-label="Menu"
                       color="accent">
@@ -40,7 +65,16 @@
 
 </div>
 
-<mat-menu #collectionsMenu="matMenu">
-  <button mat-menu-item routerLink="/aw17" (click)="openSidenav(false)">AW '17</button>
-  <button mat-menu-item (click)="openSidenav(false)">Help</button>
+<mat-menu class="collections-menu" #collectionsMenu="matMenu">
+  <button mat-menu-item routerLink="/aw17" (click)="openSidenav(false)">AW20</button>
+  <button mat-menu-item (click)="openSidenav(false)">SS20</button>
+</mat-menu>
+
+<mat-menu class="specialProjects-menu" #specialProjectsMenu="matMenu">
+  <button mat-menu-item (click)="openSidenav(false)">WL FOUND</button>
+  <button mat-menu-item (click)="openSidenav(false)">KAIZER CHIEFS</button>
+  <button mat-menu-item (click)="openSidenav(false)">THE SARTISTS</button>
+  <button mat-menu-item (click)="openSidenav(false)">MoMA</button>
+  <button mat-menu-item (click)="openSidenav(false)">TROPENMUSEUM</button>
+  <button mat-menu-item (click)="openSidenav(false)">FOAM GALLERY</button>
 </mat-menu>
