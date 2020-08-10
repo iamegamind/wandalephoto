@@ -9,36 +9,38 @@
   grid-template-rows: 1fr;
   gap: 1px 1px;
   grid-template-areas: "title menus options";
-}
 
-.menus {
-  grid-area: menus;
-}
 
-.options {
-  grid-area: options;
+  .title {
+    grid-area: title;
+    cursor: pointer;
+    text-decoration: none;
 
-  .options-text {
-    a {
-      color: black;
+    .typeface-image {
+      max-height: 100%;
+      max-width: 200px;
+    }
+
+    .text {
+      margin-left: 5px;
     }
   }
 
-  .menu-icon {
-  }
-}
-
-.title {
-  grid-area: title;
-  cursor: pointer;
-  text-decoration: none;
-
-  .icon {
-
+  .menus {
+    grid-area: menus;
   }
 
-  .text {
-    margin-left: 5px;
+  .options {
+    grid-area: options;
+
+    .options-text {
+      a {
+        color: black;
+      }
+    }
+
+    .menu-icon {
+    }
   }
 }
 
