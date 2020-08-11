@@ -52,7 +52,6 @@ export class ImageSliderComponent implements OnInit {
     interval(5000).subscribe(() => {
       if (!this.loading) {
         this.index = (this.index + 1) % this.numImages;
-        console.log(`interval - ${this.index}`);
       }
     });
   }
