@@ -13,15 +13,17 @@ import {StoreModule} from '@ngrx/store';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {environment} from '../environments/environment';
 import {metaReducers, reducers} from './reducers';
-import { ResponsiveGridComponent } from './navigation/responsive-grid/responsive-grid.component';
-import { GridItemComponent } from './components/grid-item/grid-item.component';
+import {ResponsiveGridComponent} from './navigation/responsive-grid/responsive-grid.component';
+import {GridItemComponent} from './components/grid-item/grid-item.component';
 import {HttpClientModule} from '@angular/common/http';
-import { SidenavComponent } from './navigation/sidenav/sidenav.component';
-import { ImageSliderComponent } from './components/image-slider/image-slider.component';
-import { ContactComponent } from './pages/contact/contact.component';
+import {SidenavComponent} from './navigation/sidenav/sidenav.component';
+import {ImageSliderComponent} from './components/image-slider/image-slider.component';
+import {ContactComponent} from './pages/contact/contact.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import { CollectionComponent } from './pages/collection/collection.component';
-import { FooterComponent } from './navigation/footer/footer.component';
+import {CollectionComponent} from './pages/collection/collection.component';
+import {FooterComponent} from './navigation/footer/footer.component';
+import {ServiceWorkerModule} from '@angular/service-worker';
+import {ItemDetailComponent} from './components/item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { FooterComponent } from './navigation/footer/footer.component';
     ImageSliderComponent,
     ContactComponent,
     CollectionComponent,
-    FooterComponent
+    FooterComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -53,6 +56,7 @@ import { FooterComponent } from './navigation/footer/footer.component';
     }),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
     ReactiveFormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
   ],
   providers: [],
   bootstrap: [AppComponent]
