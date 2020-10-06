@@ -1,0 +1,25 @@
+<div class="item-detail_container" fxLayout="column">
+  <div class="item-detail_visuals">
+    <img src="./assets/img/wanda.jpg"
+         style="max-width: 100%; max-height: 100%;" alt="item name">
+  </div>
+  <div class="item-detail_content">
+    <div class="item-name">{{itemName}}</div>
+    <div class="item-price">ZAR: {{itemPrice}}</div>
+    <div class="item-description">{{itemDescription}}</div>
+    <div class="item-controls" fxLayout="row">
+      <mat-form-field appearance="fill">
+        <mat-label>SIZE</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let size of itemSizes">
+            {{size}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-flat-button color="primary">ADD TO BAG</button>
+    </div>
+    <div class="item-detail_footer">
+      <a>SHIPPING & RETURNS</a>
+    </div>
+  </div>
+</div>
